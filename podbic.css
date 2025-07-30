@@ -1,0 +1,333 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+marquee{
+    width: 100%;
+    background-color: #909293;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+marquee span{
+    margin: 0px 30px;
+    color: black;
+}
+
+ nav {
+    top:0px;
+    border: 0px;
+    padding:0px;
+    width: 100%;
+    background-color: rgb(240, 248, 255);
+}
+
+nav ul {
+    display: flex;                  
+    list-style: none;             
+    margin: 0;
+    padding: 20px;
+    margin: 0px 60px;
+    gap: 40px;   
+    align-items: center;               
+}
+
+nav li a {
+    text-decoration: none;
+    color: #051b64;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: none;
+}
+nav li a:hover {
+    color: #e4620b;
+}
+
+nav li:nth-child(1) {
+    margin-right: auto;
+    padding: 0px;
+}
+
+
+marquee, nav {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.course-list {
+  display: none;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #fffdfd;
+  border-radius: 7px;
+  height: 300px;
+  width:600px;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+   box-shadow: 0 4px 10px rgb(0, 0, 0);
+   left: 400px;
+}
+.course-list div:hover {
+  background-color: #d8e9ecb5;
+  cursor: pointer;
+}
+.course-list div{
+    font-size:small;
+    border-radius: 7px;
+    margin: 5px;
+
+}
+
+#learn:hover .course-list {
+  display: grid;
+}
+.course-list div {
+  color: #000; /* black */
+  padding: 10px;
+  border: 2px solid #ddd;
+}
+
+.main{
+    background-image: url("images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.main .right {
+    height: auto;
+    width: 25%;
+    padding: 20px 40px;
+    margin: 20px 30px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    color: black;
+}
+
+.main .right label{
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.main .right input{
+    width: 95%;
+    padding: 9px 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.main .right input:focus, .main .right select:focus{ box-shadow: 0 4px 9px rgb(170, 74, 18);
+}
+
+.main .right select, .right button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.orange{
+    display: inline;
+    color: #e4620b;
+    font-size: small;
+}
+span{color: #e4620b;}
+
+.main .right button{
+    background-color: #e4620b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+h1{
+    font-size: 3em;
+    padding: 0px 60px;
+    margin-top: 0px;
+}
+.main .left button{
+    background-color: #e4620b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin:  0px 60px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.main .left button:hover, .main .right button:hover {
+    background-color: #fa985f;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.804);
+  
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#formhead {
+    margin: 0;
+}
+.orange1 {
+    display: inline;
+    color: #e4620b;
+    font-weight: bold;
+    padding: 0px 0px 0px 60px;
+}
+
+.options{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    padding: 0px;
+}
+
+.options div {
+    flex: 1;
+    padding: 20px;
+    font-size: smaller;
+    border: solid 1px #ccc;
+    padding: 16px 16px 0px;
+}
+.options div:hover {
+    background-color: #ee4b22;
+    color: white;
+    cursor: pointer;
+}
+.grey {
+    color: rgb(160, 153, 153);
+    font-size: small;
+}
+section{
+    background-color: #030a19;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px
+
+}
+
+section .left {
+    width: 40%;
+    padding: 0 0 24px;
+    margin-top:20px ;
+    border-radius: 15px;
+}
+section .left h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+section .left p {
+    font-size:small;
+}
+section .left span {
+    font-size: 1.3em;
+    color: #ff1949;
+}
+section .right{
+    width: 55%;
+    padding: 20px 80px 0px 40px;
+    
+}
+section .right li {
+    padding: 5px 0;
+    list-style: none;
+    
+}
+section .right li svg {
+    margin: 0px 10px;
+    font-size: large;
+}
+svg{
+  width: 20px;
+  height: 20px;
+}
+.bi-chevron-down{
+    color: #838383;
+
+}
+
+.cards{
+    background-color: #ddd;
+    padding: 40px;
+}
+
+.cards #first{
+    font-size: 18px;
+    color: #ff1949;
+    padding-left:45%;
+    margin-bottom: 0px;
+}
+
+.cards #second{
+    margin-top: 0px;
+    font-size: 45px;
+    padding-left:29%;
+    color: black;
+}
+
+.cardselect{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+ }
+
+
+ .cards .same{
+    background-color: #f0f0f0;
+    color: black;
+    width: 300px;
+    border: 1px silid #ddd;
+    border-radius: 10px;
+    transition: all 2sec ease-in 0.2sec;
+    height: 380px; 
+ }
+.cards .same img{
+    width: 100%;
+    border-radius: 15px
+}
+.same b, .same p{
+    padding: 10px 20px 0px;
+}
+ .cards .same p{
+    font-size: 13.2px;
+    color: #727695;
+    margin-bottom: 30px ;
+ }
+
+div .same:hover {
+    transform: scale(1.05);
+}
+div .same:hover b {
+    color:#ff1949;
+}
+.cadbu{
+    border-radius: 5px  ;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50%;
+    padding: 7px;
+    margin: 0 55px;
+    margin-bottom: 30px;
+}
+
+.cadbu:hover{
+    background-color: #ff1949;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.804);
+}
